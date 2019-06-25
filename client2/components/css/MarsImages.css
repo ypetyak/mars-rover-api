@@ -1,0 +1,46 @@
+
+
+.grid-item {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mars-image {
+    width: 300px;
+    height: 300px;
+}
+
+.loader {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.loader h2 {
+    color: rgb(20,129,134);
+    font-size: 40px;
+}
+
+.no-photo {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.no-photo h2 {
+    color: red;
+    font-size: 40px;
+}

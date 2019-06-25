@@ -1,0 +1,105 @@
+
+.main-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.search-form-div {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form-div h1 {
+    color: rgb(232,214,199);
+
+}
+
+.main-input-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-form-div button {
+    width: 25vw;
+    height: 40px;
+    border: 2px solid rgb(232,214,199);
+    background: none;
+    border-radius: 5px;
+    color: rgb(232,214,199);
+    font-size: 25px;
+    outline: none;
+}
+
+.search-form-div button:hover {
+    background: rgb(232,214,199);
+    color: black;
+    cursor: pointer
+}
+
+#error {
+    color: red;
+}
+
+.sol-input-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-items: center;
+
+}
+
+.sol-input-div h2{
+    font-size: 30px;
+    color: rgb(232,214,199);
+    margin-bottom: 5px;
+}
+
+.sol-input-div input{
+    margin-right: 15px;
+    width: 41vw;
+    height: 40px;
+    border: 2px solid rgb(232,214,199);
+    background: none;
+    outline: none;
+    color: rgb(232,214,199);
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.camera-input-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.camera-input-div h2 {
+    font-size: 30px;
+    color: rgb(232,214,199);
+    margin-bottom: 5px;
+}
+
+.camera-input-div select {
+    margin-left: 15px;
+    width: 41vw;
+    height: 45px;
+    border: 2px solid rgb(232,214,199);
+    outline: none;
+    background: none;
+    text-align: center;
+    color: rgb(232,214,199);
+    font-size: 25px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+}
