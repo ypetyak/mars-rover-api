@@ -26,20 +26,24 @@ class SearchForm extends React.Component {
 
         let searchNumber = parseInt(this.state.sol)
 
+        // check if input is a number
+        if (isNaN(searchNumber)) {
+            console.log("error");
+            this.setState({ inputError: true })
+            return;
+        }
+        
+        // check if the input is a number in range we accept
         if (searchNumber > 1000 || searchNumber < 0) {
             console.log("error");
             this.setState({ inputError: true })
             return;
         }
 
-        console.log(this.state.sol);
-        console.log(this.state.camera);
         axios.post('/search', {
             sol: this.state.sol,
             camera: this.state.camera
         }).then(response => {
-	           console.log(response.data)
-
                if (response.data.photos.length === 0) {
                    this.setState({
                        noPhotos: true,
