@@ -33,7 +33,6 @@ app.post('/search', (req, res) => {
     }
 
     axios.get(searchQuery).then(response => {
-        console.log("MARS API RESPONSE:", response.data);
         res.json(response.data);
     }).catch(error => {
         console.log("Error in Mars API request: ", error);

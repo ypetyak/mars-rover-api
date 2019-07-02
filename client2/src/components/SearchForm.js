@@ -28,14 +28,12 @@ class SearchForm extends React.Component {
 
         // check if input is a number
         if (isNaN(searchNumber)) {
-            console.log("error");
             this.setState({ inputError: true })
             return;
         }
-        
+
         // check if the input is a number in range we accept
         if (searchNumber > 1000 || searchNumber < 0) {
-            console.log("error");
             this.setState({ inputError: true })
             return;
         }
